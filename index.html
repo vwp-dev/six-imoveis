@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>six-imoveis</title>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/img/favicon/icon-180.png?h=b3e4c060cfcfaf40dd4bd05ecbf06dbb">
+    <link rel="icon" type="image/png" sizes="24x18" href="/assets/img/favicon/icon-16.png?h=b3e4c060cfcfaf40dd4bd05ecbf06dbb">
+    <link rel="icon" type="image/png" sizes="38x32" href="/assets/img/favicon/icon-32.png?h=b3e4c060cfcfaf40dd4bd05ecbf06dbb">
+    <link rel="icon" type="image/png" sizes="180x180" href="/assets/img/favicon/icon-180.png?h=b3e4c060cfcfaf40dd4bd05ecbf06dbb">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/icon-192.png?h=5f967e8ef428de477c094c6b06216f01">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/icon-512.png?h=5f967e8ef428de477c094c6b06216f01">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=1b1cb0e2be9a21f091a87691f20c6300">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css?h=33fe6d8f3148d10c2ff7ce3ff095dd41">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?h=ba7e8bfd78d99f3575f3b600f60552ce">
+    <link rel="stylesheet" href="/assets/css/home.min.css?h=75e929d10692d745f4bae8949cd31a91">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body class="home-page">
+    <div class="six-navbar" data-npp-widget="Menu">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid"><a class="navbar-brand six-navbar__brand" href="/index.html"><br><img class="img-fluid" width="1055" height="523" src="/assets/img/logo-azul.svg?h=97219b4d55f92b9ffeee1691561ae479"></a>
+                <div class="six-navbar__actions"><a class="six-navbar__announce" href="#">Anuncie seu imóvel</a><a class="six-navbar__icon-button" href="#" data-bs-toggle="offcanvas" data-bs-target="#six-top-filters"><span class="material-symbols-rounded regular">search</span></a></div><button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sixNavbarMenuMobile"><span class="material-symbols-rounded">menu</span></button>
+                <div class="collapse navbar-collapse" id="sixNavbarMenu-1">
+                    <ul class="navbar-nav six-navbar__navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#six-top-filters" data-bs-toggle="offcanvas">Balneário Camboriú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#six-top-filters" data-bs-toggle="offcanvas">Praia Brava</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#six-top-filters" data-bs-toggle="offcanvas">Lançamentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#six-top-filters" data-bs-toggle="offcanvas">Casa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#six-top-filters" data-bs-toggle="offcanvas">Apartamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-target="#six-top-filters" data-bs-toggle="offcanvas">Terreno</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="sixNavbarMenuMobile-1">
+            <div class="offcanvas-header"><a class="navbar-brand six-navbar__brand" href="#"><br><img class="img-fluid" width="1055" height="523" src="/assets/img/logo-azul.svg?h=97219b4d55f92b9ffeee1691561ae479"></a><button class="btn btn-close material-symbols-rounded" type="button" aria-label="Fechar" data-bs-dismiss="offcanvas" data-bs-target="#sixNavbarMenuMobile-1">close</button></div>
+            <div class="offcanvas-body">
+                <ul class="nav six-navbar__navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Balneário Camboriú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Praia Brava</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lançamentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Casa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Apartamento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Terreno</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Anuncie seu imóvel</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="splide" data-nwc-splide-type="loop" data-nwc-splide-autoplay="true" data-nwc-splide-pagination="true" data-nwc-splide-speed="1700" data-nwc-splide-interval="5000" data-nwc-splide-drag="true" data-nwc-splide-pause-on-hover="false" data-nwc-splide-pause-on-focus="false" data-nwc-splide-per-move="1" data-nwc-splide-per-page="1" data-nwc-splide-per-page-md="1" data-nwc-splide-per-page-xl="1" data-nwc-splide-per-page-xxl="1" data-nwc-splide-gap="0" data-nwc-splide-gap-md="0" data-nwc-splide-gap-xl="0" data-nwc-splide-gap-xxl="0" data-nwc-splide-focus="false" data-nwc-splide-cover="false" data-nwc-splide-auto-width="true" data-nwc-splide-rewind="false" data-nwc-splide-loading="false">
+            <div class="splide__track">
+                <div class="nwc-splide__loading"></div>
+                <ul class="splide__list">
+                    <li class="splide__slide"><img class="splide__slide-image--mobile" src="/assets/img/banner-home-mobile.webp?h=2d23ff9284d558b269c92a5915bd8119"><img class="splide__slide-image--desktop" src="/assets/img/banner-home-desktop.webp?h=6612f7b64eb18e4ea72921e721c21237"></li>
+                </ul>
+            </div>
+            <div class="splide__arrows"><button class="splide__arrow splide__arrow--prev"><i class="fa fa-angle-left"></i></button><button class="splide__arrow splide__arrow--next"><i class="fa fa-angle-right"></i></button></div>
+        </div>
+        <div class="six-search">
+            <ul class="six-search__buttons">
+                <li><button class="btn six-search__buttons__button" type="button" data-bs-toggle="offcanvas" data-bs-target="#six-top-filters">Comprar</button></li>
+                <li><button class="btn six-search__buttons__button" type="button" data-bs-toggle="offcanvas" data-bs-target="#six-top-filters">Alugar</button></li>
+            </ul>
+            <div class="six-filters__search-field"><input type="search" class="search-build" placeholder="Digite o bairro ou empreendimento" name="q"><button class="btn six-filters__search-field__action-button" type="submit"><span class="material-symbols-rounded">search</span></button></div>
+        </div>
+    </header>
+    <main>
+        <section class="main-showroom">
+            <div class="container">
+                <div class="row container-row">
+                    <div class="col-12 col-lg-8 col-xl-9 section__header-column">
+                        <div class="section__header">
+                            <h2 class="section__header__title">Selecionados pela Six</h2>
+                            <p class="section__header__subtitle">Imóveis que merecem mais atenção.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 section__main-column">
+                        <div class="row property-cards-row" data-npp-order-by="RAND()" data-npp-fields="slug,images,title,sale,rental,address,price,moveInReadySite,openToExchangeSite,newDevelopmentSite,furnishedSite,offPlanSite,offerSite,offPlan,moveInReady,newDevelopment,openToExchange,offer,furnished" data-npp-showroom="properties" data-npp-limit="3" data-npp-remove-empty="4">
+                            <div class="col-12 col-lg-4">
+                                <div class="property-card">
+                                    <div class="splide property-card__splide" data-nwc-splide-type="loop" data-nwc-splide-autoplay="false" data-nwc-splide-pagination="true" data-nwc-splide-speed="1200" data-nwc-splide-interval="5000" data-nwc-splide-drag="true" data-nwc-splide-loading="true">
+                                        <div class="splide__track">
+                                            <div class="nwc-splide__loading"></div>
+                                            <ul class="splide__list">
+                                                <li class="splide__slide"><img src="/assets/img/exemplos/imoveis/ap-1-1.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt="" width="296" height="219"></li>
+                                                <li class="splide__slide"><img width="1149" height="768" src="/assets/img/exemplos/imoveis/ap-1-2.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt=""></li>
+                                            </ul>
+                                            <div class="property-card__tags">
+                                                <p class="property-card__tag" data-property-card-tag-type="ready-to-move-in" data-npp-entity="moveInReadySite" data-npp-visibility="true" data-npp-remove-empty="parent">Pronto para morar</p>
+                                            </div>
+                                        </div>
+                                        <div class="splide__arrows"><button class="splide__arrow splide__arrow--prev"><i class="fa fa-angle-left"></i></button><button class="splide__arrow splide__arrow--next"><i class="fa fa-angle-right"></i></button></div>
+                                    </div><a class="property-card__content" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank">
+                                        <div class="property-card__content-top">
+                                            <h3 class="property-card__title" data-npp-entity="title">Apartamento Ibiza Towers</h3>
+                                            <ul class="property-card__description-list">
+                                                <li data-npp-entity="address[neighborhood]">Barra Sul</li>
+                                                <li>1040 m²</li>
+                                                <li>5 suítes</li>
+                                                <li>3 vagas</li>
+                                            </ul>
+                                        </div>
+                                        <p class="property-card__description__price"><span class="original-price"><span>De </span><span data-npp-entity="price[salePriceFull]" data-npp-remove-empty="parent" data-npp-format="money">R$ 4.990.000,00</span></span><span class="price"><span class="sr-only">&nbsp;Por&nbsp;</span><span data-npp-entity="price[salePrice]" data-npp-format="money">R$ 4.940.000,00</span></span></p><span class="material-symbols-rounded regular property-card__arrow">arrow_right_alt</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="property-card">
+                                    <div class="splide property-card__splide" data-nwc-splide-type="loop" data-nwc-splide-autoplay="false" data-nwc-splide-pagination="true" data-nwc-splide-speed="1200" data-nwc-splide-interval="5000" data-nwc-splide-drag="true" data-nwc-splide-loading="true">
+                                        <div class="splide__track">
+                                            <div class="nwc-splide__loading"></div>
+                                            <ul class="splide__list">
+                                                <li class="splide__slide"><img src="/assets/img/exemplos/imoveis/ap-3-3.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt="" width="296" height="219"></li>
+                                                <li class="splide__slide"><img width="1149" height="768" src="/assets/img/exemplos/imoveis/ap-1-2.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt=""></li>
+                                            </ul>
+                                            <div class="property-card__tags">
+                                                <p class="property-card__tag" data-property-card-tag-type="accepts-barter" data-npp-entity="openToExchangeSite" data-npp-visibility="true">Aceita Permuta</p>
+                                            </div>
+                                        </div>
+                                        <div class="splide__arrows"><button class="splide__arrow splide__arrow--prev"><i class="fa fa-angle-left"></i></button><button class="splide__arrow splide__arrow--next"><i class="fa fa-angle-right"></i></button></div>
+                                    </div><a class="property-card__content" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank">
+                                        <div class="property-card__content-top">
+                                            <h3 class="property-card__title" data-npp-entity="title">Apartamento Ibiza Towers</h3>
+                                            <ul class="property-card__description-list">
+                                                <li data-npp-entity="address[neighborhood]">Barra Sul</li>
+                                                <li>1040 m²</li>
+                                                <li>5 suítes</li>
+                                                <li>3 vagas</li>
+                                            </ul>
+                                        </div>
+                                        <p class="property-card__description__price"><span class="original-price"><span>De </span><span data-npp-entity="price[salePriceFull]" data-npp-remove-empty="parent" data-npp-format="money">R$ 4.990.000,00</span></span><span class="price"><span class="sr-only">&nbsp;Por&nbsp;</span><span data-npp-entity="price[salePrice]" data-npp-format="money">R$ 4.940.000,00</span></span></p><span class="material-symbols-rounded regular property-card__arrow">arrow_right_alt</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="property-card">
+                                    <div class="splide property-card__splide" data-nwc-splide-type="loop" data-nwc-splide-autoplay="false" data-nwc-splide-pagination="true" data-nwc-splide-speed="1200" data-nwc-splide-interval="5000" data-nwc-splide-drag="true" data-nwc-splide-loading="true">
+                                        <div class="splide__track">
+                                            <div class="nwc-splide__loading"></div>
+                                            <ul class="splide__list">
+                                                <li class="splide__slide"><img src="/assets/img/exemplos/imoveis/ap-1-2.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt="" width="296" height="219"></li>
+                                                <li class="splide__slide"><img width="1149" height="768" src="/assets/img/exemplos/imoveis/ap-1-2.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="splide__arrows"><button class="splide__arrow splide__arrow--prev"><i class="fa fa-angle-left"></i></button><button class="splide__arrow splide__arrow--next"><i class="fa fa-angle-right"></i></button></div>
+                                    </div><a class="property-card__content" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank">
+                                        <div class="property-card__content-top">
+                                            <h3 class="property-card__title" data-npp-entity="title">Apartamento Ibiza Towers</h3>
+                                            <ul class="property-card__description-list">
+                                                <li data-npp-entity="address[neighborhood]">Barra Sul</li>
+                                                <li>1040 m²</li>
+                                                <li>5 suítes</li>
+                                                <li>3 vagas</li>
+                                            </ul>
+                                        </div>
+                                        <p class="property-card__description__price"><span class="original-price"><span>De </span><span data-npp-entity="price[salePriceFull]" data-npp-remove-empty="parent" data-npp-format="money">R$ 4.990.000,00</span></span><span class="price"><span class="sr-only">&nbsp;Por&nbsp;</span><span data-npp-entity="price[salePrice]" data-npp-format="money">R$ 4.940.000,00</span></span></p><span class="material-symbols-rounded regular property-card__arrow">arrow_right_alt</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-3 section__buttons-column">
+                        <div class="section__buttons"><a class="btn btn-primary" role="button" href="/imoveis.html">Ver seleção completa<span class="material-symbols-rounded regular">arrow_right_alt</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="banner-section__main row">
+                            <div class="col-12 col-lg-7 col-xl-12 banner-section__main__content">
+                                <h2 class="banner-section__main__title">Destaques</h2>
+                                <p class="banner-section__main__subtitle">Nem toda oportunidade está no preço.</p>
+                                <p class="banner-section__main__text">Imóveis com potencial real, selecionados com análise e visão de mercado. </p>
+                            </div>
+                            <div class="col-12 col-lg-5 col-xl-12 banner-section__main__button"><a class="btn banner-section__button" role="button">Ver oportunidades<span class="material-symbols-rounded regular">arrow_right_alt</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gradient main-showroom">
+            <div class="container">
+                <div class="row container-row">
+                    <div class="col-12 col-lg-8 col-xl-9 section__header-column">
+                        <div class="section__header">
+                            <h2 class="section__header__title">Seu próximo imóvel</h2>
+                            <p class="section__header__subtitle">Uma seleção para diferentes possibilidades.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 section__main-column">
+                        <div class="row property-cards-row" data-npp-order-by="RAND()" data-npp-fields="slug,images,title,sale,rental,address,price,moveInReadySite,openToExchangeSite,newDevelopmentSite,furnishedSite,offPlanSite,offerSite,offPlan,moveInReady,newDevelopment,openToExchange,offer,furnished" data-npp-showroom="properties" data-npp-limit="3" data-npp-remove-empty="4">
+                            <div class="col-12 col-lg-4">
+                                <div class="property-card">
+                                    <div class="splide property-card__splide" data-nwc-splide-type="loop" data-nwc-splide-autoplay="false" data-nwc-splide-pagination="true" data-nwc-splide-speed="1200" data-nwc-splide-interval="5000" data-nwc-splide-drag="true" data-nwc-splide-loading="true">
+                                        <div class="splide__track">
+                                            <div class="nwc-splide__loading"></div>
+                                            <ul class="splide__list">
+                                                <li class="splide__slide"><img src="/assets/img/exemplos/imoveis/ap-1-1.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt="" width="296" height="219"></li>
+                                                <li class="splide__slide"><img width="1149" height="768" src="/assets/img/exemplos/imoveis/ap-1-2.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt=""></li>
+                                            </ul>
+                                            <div class="property-card__tags">
+                                                <p class="property-card__tag" data-property-card-tag-type="ready-to-move-in" data-npp-entity="moveInReadySite" data-npp-visibility="true" data-npp-remove-empty="parent">Pronto para morar</p>
+                                            </div>
+                                        </div>
+                                        <div class="splide__arrows"><button class="splide__arrow splide__arrow--prev"><i class="fa fa-angle-left"></i></button><button class="splide__arrow splide__arrow--next"><i class="fa fa-angle-right"></i></button></div>
+                                    </div><a class="property-card__content" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank">
+                                        <div class="property-card__content-top">
+                                            <h3 class="property-card__title" data-npp-entity="title">Apartamento Ibiza Towers</h3>
+                                            <ul class="property-card__description-list">
+                                                <li data-npp-entity="address[neighborhood]">Barra Sul</li>
+                                                <li>1040 m²</li>
+                                                <li>5 suítes</li>
+                                                <li>3 vagas</li>
+                                            </ul>
+                                        </div>
+                                        <p class="property-card__description__price"><span class="original-price"><span>De </span><span data-npp-entity="price[salePriceFull]" data-npp-remove-empty="parent" data-npp-format="money">R$ 4.990.000,00</span></span><span class="price"><span class="sr-only">&nbsp;Por&nbsp;</span><span data-npp-entity="price[salePrice]" data-npp-format="money">R$ 4.940.000,00</span></span></p><span class="material-symbols-rounded regular property-card__arrow">arrow_right_alt</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="property-card">
+                                    <div class="splide property-card__splide" data-nwc-splide-type="loop" data-nwc-splide-autoplay="false" data-nwc-splide-pagination="true" data-nwc-splide-speed="1200" data-nwc-splide-interval="5000" data-nwc-splide-drag="true" data-nwc-splide-loading="true">
+                                        <div class="splide__track">
+                                            <div class="nwc-splide__loading"></div>
+                                            <ul class="splide__list">
+                                                <li class="splide__slide"><img src="/assets/img/exemplos/imoveis/ap-3-3.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt="" width="296" height="219"></li>
+                                                <li class="splide__slide"><img width="1149" height="768" src="/assets/img/exemplos/imoveis/ap-1-2.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt=""></li>
+                                            </ul>
+                                            <div class="property-card__tags">
+                                                <p class="property-card__tag" data-property-card-tag-type="accepts-barter" data-npp-entity="openToExchangeSite" data-npp-visibility="true">Aceita Permuta</p>
+                                            </div>
+                                        </div>
+                                        <div class="splide__arrows"><button class="splide__arrow splide__arrow--prev"><i class="fa fa-angle-left"></i></button><button class="splide__arrow splide__arrow--next"><i class="fa fa-angle-right"></i></button></div>
+                                    </div><a class="property-card__content" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank">
+                                        <div class="property-card__content-top">
+                                            <h3 class="property-card__title" data-npp-entity="title">Apartamento Ibiza Towers</h3>
+                                            <ul class="property-card__description-list">
+                                                <li data-npp-entity="address[neighborhood]">Barra Sul</li>
+                                                <li>1040 m²</li>
+                                                <li>5 suítes</li>
+                                                <li>3 vagas</li>
+                                            </ul>
+                                        </div>
+                                        <p class="property-card__description__price"><span class="original-price"><span>De </span><span data-npp-entity="price[salePriceFull]" data-npp-remove-empty="parent" data-npp-format="money">R$ 4.990.000,00</span></span><span class="price"><span class="sr-only">&nbsp;Por&nbsp;</span><span data-npp-entity="price[salePrice]" data-npp-format="money">R$ 4.940.000,00</span></span></p><span class="material-symbols-rounded regular property-card__arrow">arrow_right_alt</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="property-card">
+                                    <div class="splide property-card__splide" data-nwc-splide-type="loop" data-nwc-splide-autoplay="false" data-nwc-splide-pagination="true" data-nwc-splide-speed="1200" data-nwc-splide-interval="5000" data-nwc-splide-drag="true" data-nwc-splide-loading="true">
+                                        <div class="splide__track">
+                                            <div class="nwc-splide__loading"></div>
+                                            <ul class="splide__list">
+                                                <li class="splide__slide"><img src="/assets/img/exemplos/imoveis/ap-1-2.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt="" width="296" height="219"></li>
+                                                <li class="splide__slide"><img width="1149" height="768" src="/assets/img/exemplos/imoveis/ap-1-2.webp?h=7d0341376bf4b86cbbc5497ffb7039d0" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="splide__arrows"><button class="splide__arrow splide__arrow--prev"><i class="fa fa-angle-left"></i></button><button class="splide__arrow splide__arrow--next"><i class="fa fa-angle-right"></i></button></div>
+                                    </div><a class="property-card__content" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank">
+                                        <div class="property-card__content-top">
+                                            <h3 class="property-card__title" data-npp-entity="title">Apartamento Ibiza Towers</h3>
+                                            <ul class="property-card__description-list">
+                                                <li data-npp-entity="address[neighborhood]">Barra Sul</li>
+                                                <li>1040 m²</li>
+                                                <li>5 suítes</li>
+                                                <li>3 vagas</li>
+                                            </ul>
+                                        </div>
+                                        <p class="property-card__description__price"><span class="original-price"><span>De </span><span data-npp-entity="price[salePriceFull]" data-npp-remove-empty="parent" data-npp-format="money">R$ 4.990.000,00</span></span><span class="price"><span class="sr-only">&nbsp;Por&nbsp;</span><span data-npp-entity="price[salePrice]" data-npp-format="money">R$ 4.940.000,00</span></span></p><span class="material-symbols-rounded regular property-card__arrow">arrow_right_alt</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-3 section__buttons-column">
+                        <div class="section__buttons"><a class="btn btn-primary" role="button" href="/imoveis.html">Ver seleção completa<span class="material-symbols-rounded regular">arrow_right_alt</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner-section list-your-property">
+            <div class="nwc-parallax" data-nwc-parallax="true">
+                <div class="nwc-parallax-content"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="banner-section__main row">
+                            <div class="col-12 banner-section__image-column"><img src="/assets/img/venda-ou-alugue.webp?h=72810f4b81ed85038f905ddd1312e892"></div>
+                            <div class="col-12 banner-section__main__content">
+                                <h2 class="banner-section__main__title">Quer vender ou alugar?</h2>
+                                <p class="banner-section__main__subtitle">Seu imóvel também precisa de uma estratégia.</p>
+                                <p class="banner-section__main__text">Da apresentação à negociação, cuidamos de cada etapa para conectar seu imóvel às pessoas certas.</p>
+                            </div>
+                            <div class="col-12 banner-section__main__button"><a class="btn banner-section__button" role="button">Fale conosco<span class="material-symbols-rounded regular">arrow_right_alt</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog-section">
+            <div class="container">
+                <div class="row container-row">
+                    <div class="col-12 col-lg-8 col-xl-9 section__header-column">
+                        <div class="section__header">
+                            <h2 class="section__header__title">Saiba mais</h2>
+                            <p class="section__header__subtitle">O mercado imobiliário visto de outro ângulo.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 section__main-column">
+                        <div class="row blog__cards-row" data-npp-order-by="RAND()" data-npp-fields="slug,images,title,sale,rental,address,price,moveInReadySite,openToExchangeSite,newDevelopmentSite,furnishedSite,offPlanSite,offerSite,offPlan,moveInReady,newDevelopment,openToExchange,offer,furnished" data-npp-showroom="properties" data-npp-limit="3" data-npp-remove-empty="4">
+                            <div class="col-12 col-lg-4"><a class="blog__post-card" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank"><img class="blog__post-card__image" src="/assets/img/fachada-predio.webp?h=58b76b962a2927fd3f14fb9f626bc0d4" width="936" height="527">
+                                    <div class="blog__post-card__content">
+                                        <div class="blog__post-card__content-top">
+                                            <h3 class="blog__post-card__title" data-npp-entity="title">Comprar pronto ou na planta: qual a melhor decisão hoje?</h3>
+                                            <p class="blog__post-card__category">Mercado imobiliário</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-12 col-lg-4"><a class="blog__post-card" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank"><img class="blog__post-card__image" src="/assets/img/frente-mar-nascer-do-sol.webp?h=6a2598aa4895c5a93a5b73c5222be85d" width="936" height="527">
+                                    <div class="blog__post-card__content">
+                                        <div class="blog__post-card__content-top">
+                                            <h3 class="blog__post-card__title" data-npp-entity="title">Barra Sul ou Barra Norte: onde está o melhor negócio?</h3>
+                                            <p class="blog__post-card__category">Mercado imobiliário</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-12 col-lg-4"><a class="blog__post-card" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank"><img class="blog__post-card__image" src="/assets/img/exemplos/apartamento.webp?h=6be8143561d30c0eb3df0db2fce216bb" width="936" height="527">
+                                    <div class="blog__post-card__content">
+                                        <div class="blog__post-card__content-top">
+                                            <h3 class="blog__post-card__title" data-npp-entity="title">Comprar pronto ou na planta: qual a melhor decisão hoje?</h3>
+                                            <p class="blog__post-card__category">Mercado imobiliário</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                        <div class="splide blog__cards-splide" data-nwc-splide-type="slide" data-nwc-splide-autoplay="false" data-nwc-splide-pagination="false" data-nwc-splide-speed="1200" data-nwc-splide-gap="24" data-nwc-splide-gap-md="0">
+                            <div class="splide__track">
+                                <div class="nwc-splide__loading"></div>
+                                <ul class="splide__list">
+                                    <li class="splide__slide"><a class="blog__post-card" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank"><img class="blog__post-card__image" src="/assets/img/fachada-predio.webp?h=58b76b962a2927fd3f14fb9f626bc0d4" width="936" height="527">
+                                            <div class="blog__post-card__content">
+                                                <div class="blog__post-card__content-top">
+                                                    <h3 class="blog__post-card__title" data-npp-entity="title">Comprar pronto ou na planta: qual a melhor decisão hoje?</h3>
+                                                    <p class="blog__post-card__category">Mercado imobiliário</p>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li class="splide__slide"><a class="blog__post-card" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank"><img class="blog__post-card__image" src="/assets/img/frente-mar-nascer-do-sol.webp?h=6a2598aa4895c5a93a5b73c5222be85d" width="936" height="527">
+                                            <div class="blog__post-card__content">
+                                                <div class="blog__post-card__content-top">
+                                                    <h3 class="blog__post-card__title" data-npp-entity="title">Barra Sul ou Barra Norte: onde está o melhor negócio?</h3>
+                                                    <p class="blog__post-card__category">Mercado imobiliário</p>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                    <li class="splide__slide"><a class="blog__post-card" href="/imovel.html" role="button" data-npp-entity="permalink" target="_blank"><img class="blog__post-card__image" src="/assets/img/exemplos/apartamento.webp?h=6be8143561d30c0eb3df0db2fce216bb" width="936" height="527">
+                                            <div class="blog__post-card__content">
+                                                <div class="blog__post-card__content-top">
+                                                    <h3 class="blog__post-card__title" data-npp-entity="title">Comprar pronto ou na planta: qual a melhor decisão hoje?</h3>
+                                                    <p class="blog__post-card__category">Mercado imobiliário</p>
+                                                </div>
+                                            </div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-xl-3 section__buttons-column">
+                        <div class="section__buttons"><a class="btn btn-primary" role="button" href="/imoveis.html">Ver todos os conteúdos<span class="material-symbols-rounded regular">arrow_right_alt</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact">
+                    <div class="row">
+                        <div class="col col-lg-6 contact__image-column"><img width="1124" height="914" class="contact__image" src="/assets/img/fachada-six-imoveis.webp?h=e71eb29657902a55c82b05c6ff546260"><img class="contact__image-frame" src="/assets/img/moldura-da-imagem-no-formulario-de-contato.svg?h=0ae4b19210ed3817d6185ebc3929803b"></div>
+                        <div class="col col-lg-6">
+                            <div class="contact__main">
+                                <div class="section__header">
+                                    <h2 class="section__header__title">Contato</h2>
+                                    <p class="section__header__subtitle">Vamos conversar?</p>
+                                    <p class="section__header__text">Encontre seu próximo imóvel ou <br>fale com a nossa equipe.</p>
+                                </div>
+                                <form class="contact__form nwc-form" data-nwl-email="true" data-nwl-destination="contato@email.com.br" data-nwl-subject="Assunto do email">
+                                    <div class="col-12"><label class="col-form-label nwc-field"><span class="nwc-field__label">Nome</span><input class="form-control nwc-field__input" type="text" name="Nome" required="" placeholder="Digite seu nome"></label></div>
+                                    <div class="col-12"><label class="col-form-label nwc-field"><span class="nwc-field__label">Email</span><input class="form-control nwc-field__input" type="text" name="Email" required="" placeholder="Digite seu email principal"></label></div>
+                                    <div class="col-12 position-relative"><label class="form-label nwc-field"><span class="nwc-field__label">Mensagem</span><textarea class="nwc-field__input" name="Mensagem" required="" rows="5" placeholder="Como podemos te ajudar?"></textarea></label><input class="form-control nwc-field__find-out" type="text" placeholder="Como conheceu" name="como-conheceu" tabindex="-1"></div>
+                                    <div class="col-12">
+                                        <p class="nwc-form__terms" data-npp-plugin="Recaptcha">Este site é protegido pelo reCAPTCHA e são aplicáveis a <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade</a>&nbsp;e os <a href="https://policies.google.com/terms" target="_blank">Termos de Serviço</a>&nbsp;do Google.</p>
+                                    </div>
+                                    <div class="col-12 nwc-form__submit-column"><button class="btn btn-primary" type="submit"><span>Enviar mensagem</span><span class="material-symbols-rounded regular">arrow_right_alt</span><span class="spinner-border spinner-border-sm" role="status"></span></button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row six-footer__main-row">
+                <div class="col-12 col-lg-3 col-xl-auto col-xxl-3 six-footer__brand-column">
+                    <div>
+                        <div><a class="six-footer__brand-column__brand" href="/index.html"><img width="1055" height="523" src="/assets/img/logo-branca.svg?h=d3f297437c9824696051bc83d61cfc0f"></a>
+                            <p class="six-footer__brand-column__creci">CRECI: 3474-J</p>
+                        </div>
+                        <p class="six-footer__brand-column__phrase"><span>Há 14 anos realizando</span><span>grandes negócios.</span></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-auto col-xl col-xxl six-footer__address-column">
+                    <div class="six-footer__item-wrapper">
+                        <div>
+                            <h2 class="six-footer__title">Endereço</h2>
+                            <div class="six-footer__address-link"><span class="six-footer__address-link__icon material-symbols-rounded">location_on</span><a class="six-footer__link" href="#" target="_blank">Avenida Brasil, 146, Sala 1<br>Pioneiros - CEP 88331-040<br>Balneário Camboriú - SC</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg col-xl-6 col-xxl-6 six-footer__navigation-column">
+                    <div id="six-footer__navigation-column--desktop">
+                        <div class="six-footer__item-wrapper">
+                            <div>
+                                <h2 class="six-footer__title">Imóveis</h2>
+                                <div class="six-footer__item__links-wrapper">
+                                    <div class="six-footer__item__links-line"><a class="six-footer__link" href="#">Comprar</a><a class="six-footer__link" href="#">Alugar</a></div>
+                                    <div class="six-footer__item__links-line"><a class="six-footer__link" href="#">Anunciar imóvel</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="six-footer__item-wrapper">
+                            <div>
+                                <h2 class="six-footer__title">Explore</h2>
+                                <div class="six-footer__item__links-wrapper">
+                                    <div class="six-footer__item__links-line"><a class="six-footer__link" href="#">Praia Brava</a><a class="six-footer__link" href="#">Balneário Camboriú</a><a class="six-footer__link" href="#">Litoral Norte de SC</a></div>
+                                    <div class="six-footer__item__links-line"><a class="six-footer__link" href="#">Pronto para morar</a><a class="six-footer__link" href="#">Na planta</a><a class="six-footer__link" href="#">Lançamentos</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" role="tablist" id="six-footer__navigation-column--mobile">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed six-footer__title" type="button" data-bs-toggle="collapse" data-bs-target="#six-footer__navigation-column--mobile .item-1" aria-expanded="false" aria-controls="six-footer__navigation-column--mobile .item-1">Imóveis</button></h2>
+                            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#six-footer__navigation-column--mobile">
+                                <div class="accordion-body">
+                                    <div class="six-footer__navigation-link"><span class="six-footer__navigation-link__icon material-symbols-rounded">keyboard_arrow_right</span><a href="#" target="_blank">Alugar</a></div>
+                                    <div class="six-footer__navigation-link"><span class="six-footer__navigation-link__icon material-symbols-rounded">keyboard_arrow_right</span><a href="#" target="_blank">Comprar</a></div>
+                                    <div class="six-footer__navigation-link"><span class="six-footer__navigation-link__icon material-symbols-rounded">keyboard_arrow_right</span><a href="#" target="_blank">Anunciar imóvel</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed six-footer__title" type="button" data-bs-toggle="collapse" data-bs-target="#six-footer__navigation-column--mobile .item-2" aria-expanded="false" aria-controls="six-footer__navigation-column--mobile .item-2">Explore</button></h2>
+                            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#six-footer__navigation-column--mobile">
+                                <div class="accordion-body">
+                                    <div class="six-footer__navigation-link"><span class="six-footer__navigation-link__icon material-symbols-rounded">keyboard_arrow_right</span><a href="#" target="_blank">Praia Brava</a></div>
+                                    <div class="six-footer__navigation-link"><span class="six-footer__navigation-link__icon material-symbols-rounded">keyboard_arrow_right</span><a href="#" target="_blank">Balneário Camboriú</a></div>
+                                    <div class="six-footer__navigation-link"><span class="six-footer__navigation-link__icon material-symbols-rounded">keyboard_arrow_right</span><a href="#" target="_blank">Litoral Norte de SC</a></div>
+                                    <div class="six-footer__navigation-link"><span class="six-footer__navigation-link__icon material-symbols-rounded">keyboard_arrow_right</span><a href="#" target="_blank">Lançamentos</a></div>
+                                    <div class="six-footer__navigation-link"><span class="six-footer__navigation-link__icon material-symbols-rounded">keyboard_arrow_right</span><a href="#" target="_blank">Na planta</a></div>
+                                    <div class="six-footer__navigation-link"><span class="six-footer__navigation-link__icon material-symbols-rounded">keyboard_arrow_right</span><a href="#" target="_blank">Pronto para morar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-auto six-footer__contact-column six-footer__contact-column--phone">
+                    <div class="six-footer__contact-links">
+                        <div class="six-footer__contact-link"><span class="six-footer__contact-link__icon"><svg class="bi bi-whatsapp" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+                                </svg></span><a href="#" target="_blank">+55 (47) 98845-9808</a></div>
+                        <div class="six-footer__contact-link"><span class="six-footer__contact-link__icon material-symbols-rounded regular" style="transform: scaleX(-1);">phone_enabled</span><a href="#" target="_blank">+55 (47) 3360-7336</a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-auto six-footer__contact-column six-footer__contact-column--social-media">
+                    <div class="six-footer__contact-links">
+                        <div class="six-footer__contact-link"><span class="six-footer__contact-link__icon"><svg class="bi bi-instagram" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                                </svg></span><a href="#" target="_blank">@siximoveis</a></div>
+                        <div class="six-footer__contact-link"><span class="six-footer__contact-link__icon"><svg class="bi bi-youtube" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"></path>
+                                </svg></span><a href="#" target="_blank">@six.imoveis</a></div>
+                        <div class="six-footer__contact-link"><span class="six-footer__contact-link__icon"><svg class="bi bi-tiktok" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                                </svg></span><a href="#" target="_blank">@siximoveis.com</a></div>
+                    </div>
+                </div>
+                <div class="col six-footer__creci-desktop-column">
+                    <p class="six-footer__creci-desktop">CRECI: 3474-J</p>
+                </div>
+            </div>
+            <div class="row six-footer__bottom-row">
+                <div class="col-12">
+                    <div class="six-footer__privacy-police-wrapper"><a class="six-footer__privacy-police" href="politica-privacidade">Politica de Privacidade</a>
+                        <p class="six-footer__developed-by--mobile">Desenvolvido por&nbsp;<a href="#" target="_blank">Vitória WP</a></p>
+                    </div>
+                    <p class="six-footer__copyright"><span>Copyright © <span data-npp-year="true">2026</span>&nbsp;Six Imóveis.&nbsp;</span><span>Todos os direitos reservados.</span></p>
+                    <p class="six-footer__developed-by--desktop">Desenvolvido por&nbsp;<a href="#" target="_blank">Vitória WP</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div>
+        <div class="nwc-snackbar" data-npp-widget="snackbar"><span class="nwc-snackbar-message">Text</span><span class="material-symbols-rounded nwc-snackbar-close" aria-label="Fechar mensagem">close</span></div>
+        <div class="offcanvas offcanvas-top six-filters" tabindex="-1" data-bs-scroll="true" id="six-top-filters">
+            <div class="container-fluid">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title">Filtros</h2><button class="btn btn-close material-symbols-rounded" type="button" aria-label="Close" data-bs-dismiss="offcanvas" data-bs-target="#six-top-filters">close</button>
+                    <div class="six-filters__search-field"><input type="search" class="search-build" placeholder="Digite sua busca" name="q"><button class="btn six-filters__search-field__action-button" type="submit"><span class="material-symbols-rounded">search</span></button></div>
+                </div>
+                <div class="offcanvas-body six-scrollbar">
+                    <div class="six-filters__item">
+                        <div class="six-filters__search-field"><input type="search" class="search-build" placeholder="Digite sua busca" name="q"><button class="btn six-filters__search-field__action-button" type="submit"><span class="material-symbols-rounded">search</span></button></div>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">arrow_forward</span>Você deseja Comprar ou Alugar?</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Comprar</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Alugar</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">map</span>Localização</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Balneário Camboriú</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Itajaí</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Camboriú</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">my_location</span>Região de interesse</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Ariribá</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Bairro da Barra</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Barra Sul</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Pioneiros</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Praia dos Amores</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Praia dos Amores</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Quadra Mar Norte</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">São Judas Tadeu</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Vila Real</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Santa Regina</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Fazenda</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Praia Brava</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">home_work</span>Tipo de Imóvel</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Apartamento</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Apartamento Duplex</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Apartamento Garden</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Apartamento Triplex</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Casa</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Cobertura</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Cobertura Duplex</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Galpão Industrial</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Loft</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Sala</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Terreno</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">bed</span>Quartos</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">1</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">2</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">3</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">4+</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">bathtub</span>Suítes</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">1</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">2</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">3</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">4+</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">wc</span>Banheiros</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">1</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">2</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">3</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">4+</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">directions_car</span>Vagas</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">1</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">2</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">3</span></label></li>
+                            <li><label class="form-label nwc-checkbox nwc-checkbox--square"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">4+</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">money_range</span>Valor</h3>
+                        <ul class="six-filters__item__body">
+                            <li class="six-filters__value-field-wrapper"><label class="form-label nwc-field six-filters__value-field"><span class="six-filters__value-field__label"><span class="nwc-field__label">Mínimo</span><span>(R$)</span></span><input type="text" class="nwc-field__input" name="nwcField" required="" placeholder="700.000"></label></li>
+                            <li class="six-filters__value-field-wrapper"><label class="form-label nwc-field six-filters__value-field"><span class="six-filters__value-field__label"><span class="nwc-field__label">Máximo</span><span>(R$)</span></span><input type="text" class="nwc-field__input" name="nwcField" required="" placeholder="1.200.000"></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">straighten</span>Metragem</h3>
+                        <ul class="six-filters__item__body">
+                            <li class="six-filters__value-field-wrapper"><label class="form-label nwc-field six-filters__value-field"><span class="six-filters__value-field__label"><span class="nwc-field__label">Mínimo</span><span>(m²)</span></span><input type="text" class="nwc-field__input" name="nwcField" required="" placeholder="-"></label></li>
+                            <li class="six-filters__value-field-wrapper"><label class="form-label nwc-field six-filters__value-field"><span class="six-filters__value-field__label"><span class="nwc-field__label">Máximo</span><span>(m²)</span></span><input type="text" class="nwc-field__input" name="nwcField" required="" placeholder="-"></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">beach_access</span>Posição</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Frente Mar</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Quadra Mar</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Vista Mar</span></label></li>
+                        </ul>
+                    </div>
+                    <div class="six-filters__item">
+                        <h3 class="six-filters__item__title"><span class="material-symbols-rounded">filter_plus</span>Mais filtros</h3>
+                        <ul class="six-filters__item__body">
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Lançamento</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Pronto para morar</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Na planta</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Mobiliado</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Ofertas</span></label></li>
+                            <li><label class="form-label nwc-checkbox"><input type="checkbox" class="form-check-input" name="nwlCheckbox"><span class="nwc-checkbox__label">Aceita permuta</span></label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offcanvas-footer"><button class="btn btn-outline-primary" type="button">Limpar filtros<span class="material-symbols-rounded">close</span></button><button class="btn btn-primary" type="button">Buscar imóveis<span class="material-symbols-rounded">manage_search</span></button></div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/bootstrap/js/bootstrap.min.js?h=9b160b415b961aeb41b64305a23d2953"></script>
+    <script src="https://chompworks.termonos.io/nwc/Root/NwcRoot-2-Snackbar.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwc/Field/NwcField-1-Mask.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwc/Splide/NwcSplide-1-Splide.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwl/Component/NwlComponent-1-Sapi.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwl/Showroom/NwlShowroom.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwl/Showroom/NwlShowroom-3-ItemShare.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwl/Showroom/NwlShowroom-7-Filter.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwl/Showroom/NwlShowroom-8-FilterChipGroup.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwl/Showroom/NwlShowroom-9-Sort.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwc/Baguettebox/NwcBaguettebox.min.js"></script>
+    <script src="https://chompworks.termonos.io/nwc/Root/NwcRoot-1-Functions.min.js"></script>
+    <script src="/assets/js/script.min.js?h=1775796c09888f72124fb9d94fd371bd"></script>
+</body>
+
+</html>
