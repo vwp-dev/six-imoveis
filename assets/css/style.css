@@ -1,0 +1,9 @@
+#six-footer__navigation-column--desktop {
+    display: none!important;
+}
+
+@media (min-widht: 992px) {
+    #six-footer__navigation-column--desktop {
+        display: flex!important;
+    }
+}
